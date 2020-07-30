@@ -1,0 +1,79 @@
+<!-- using splice-push,pop,enque,deque
+4 buttons with these names -->
+
+<html>
+    <body>
+        <script>
+            let stack=[];
+            let queue=[];
+
+            function stackPush(){
+                var num=document.getElementById("input").value;
+                if (num.length < 1)
+                {
+                    alert("DEFAULT");
+                    return false;
+                }   
+                let len=stack.length;
+                stack.splice(len,0,num);
+                document.getElementById("demo").innerHTML=stack;
+		        document.getElementById("input").value="";
+                
+            }
+
+            function stackPop(){
+                let len=stack.length-1;
+                stack.splice(len,1);
+                document.getElementById('demo').innerHTML=stack;
+            }
+
+            function enqueue(){
+                var num=document.getElementById("enqueue").value;
+                if (num.length < 1)
+                {
+                    alert("DEFAULT");
+                    return false;
+                }   
+                let len=queue.length;
+                queue.splice(len,0,num);
+                document.getElementById("dequeue").innerHTML=queue;
+		        document.getElementById("enqueue").value="";
+                
+            }
+
+            function dequeue(){
+                
+                queue.splice(0,1);
+                document.getElementById('dequeue').innerHTML=queue;
+            }
+
+        </script>
+
+
+        <table   style="margin: 0 auto; width:500px;border:0">
+            <tr>
+                <td colspan="2"><h2>Stack Implementation</h2></td>
+            </tr>
+        
+            <tr>
+                <td><input type="text" id="input" /></td>
+                <td id="demo"></td><br>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="stackPush()" value="Push" ></td>  
+              
+                <td><input type="button" onclick="stackPop()" value="Pop" ></td>
+            </tr>
+
+            <tr>
+                <td><input type='text' id='enqueue'></td>
+                <td id='dequeue'></td>
+            </tr>
+            <tr>
+                <td><input type='button' onclick='enqueue()' value='Enqueue'></td>
+                <td><input type='button' onclick='dequeue()' value='Dequeue'></td>
+            </tr>
+        
+        </table>
+    </body>
+</html>

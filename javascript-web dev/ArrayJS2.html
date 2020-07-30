@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+		function check(){
+            let big=[];
+            let cities =[{name:'los angeles',popu:12},{name: 'hello',popu:13},{name:'hhhh',popu:45}];
+            for (let i=0; i<cities.length;i++){
+                if((cities[i].popu)>12)
+                    big.push(cities[i].name)
+            }
+            document.getElementById('demo').innerHTML=big;
+        }
+           
+	
+</script>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Array Operations</h2></td>
+    </tr>
+ 
+    <tr>
+        <td><p id="demo">1234567</p></td><td></td>
+    </tr>
+	<tr>
+        <td><input type="button" onclick="check()" value="Check"/></td><td></td>
+    </tr>
+    
+</table>
+</body>
+</html>

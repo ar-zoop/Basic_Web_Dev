@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            function validate(){
+                var uname=document.getElementById('empname').value;
+                var regx=/[r-z R-Z]rzoo/;
+                if (regx.test(uname)){
+                    document.getElementById('ulabel').style.visibility='visible';
+                }
+                    
+                else{
+                    alert ('invalid')
+                }
+            }
+        </script>
+
+        <input type='text' id='empname'><br><br>
+        <label id='ulabel' style='color:red; visibility:hidden'>sdfgh
+        </label>
+        <input type='button' onclick='validate()' value='show' >
+</html>
