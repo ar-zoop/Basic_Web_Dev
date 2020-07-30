@@ -1,2 +1,2 @@
 # CS-during-Lockdown
-2020-colleges haven't begun yet for the first year
+~July 2020 to October 2020~
