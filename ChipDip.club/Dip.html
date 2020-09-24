@@ -1,106 +1,303 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-    <style>
-        body{ background-color: blanchedalmond;
-        font-family:cursive;
-        color: black;
-        text-align: center;
-        }
-        .boop{border:1px solid black}
-        td,th{border:1px solid black;
-        border-collapse:collapse;
-        }
+    <head>
+        <title>
+            Arzoo's resume
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    </style>
-    <title>chipdip.club</title>
-</head> 
-<body>
+        <style>
+            input,textarea{
+                padding:5px;
+                
+            }
+
+            .dp{
+                border:3px solid white;
+                border-radius: 140px;
+                width:250px;
+                height:250px;
+                float:left;
+                margin-top:10px;
+                display: block;
+                margin-left: 10px;
+                margin-right: auto;
+                                
+            }        
+
+           
+
+            hr{
+                height:1px;
+                background-color:rgb(96,132,77);
+                border:none;
+                margin-top:10px;
+                /* rgb(192,218,141)' */
+            }
+            .edu-years{
+                color:grey
+            }
+                
+            .photo-spacing{               
+                margin-bottom:25px
+            }    
+
+            .banner{
+                text-align:center;
+                background-color:rgb(96,132,77);
+                color:white;
+                padding: 5px
+
+            }
+
+            /* IMAGE GRIDING RESPONSIVE */
+
+            {
+                box-sizing: border-box;
+            }
+
+            .header {
+            text-align: center;
+            padding: 32px;
+            }
+
+            .row {
+            display: -ms-flexbox; 
+            display: flex;
+            -ms-flex-wrap: wrap; 
+            flex-wrap: wrap;
+            padding: 0 4px;
+            } 
+
+            
+            .column {
+            -ms-flex: 25%; 
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            }
+
+            .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            }
+
+            
+            @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+            }
+
+            @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+            } 
+
+            
+
+             #outer-div {
+                width: 100%;
+                text-align: center;
+                
+            }
+
+            #inner-div {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 3px;
+                
+            } 
+
+           
+
+            .img:hover{
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                transform: scale(2); 
+            } 
+
+            .img{
+                width:100%
+            }
+
+        </style>
+    </head>
     
-    <div style="background-color: grey ;margin;0px; height:50px; color:blanchedalmond ">
-        <a href="https://www.youtube.com/" target="_blank">
-        <img src="img/logo.png" alt="chipdip logo" style ="height:10%; width:10%; float:left "  title="hello buddy">
-        </a>
-        <h1>Welcome to CHIPDIP.CLUB!</h1>
-    </div>
 
-    <div>
-        
-        <button title="open youtube.com" > <a href="https://www.youtube.com/" target=_blank >Lets go to neverland!</a></button>
-        
-        
-    </div>
+    <body style='background-color: rgb(245,244,239);'>
 
-  
-    <div>
-        <table class=boop>
-            <tr class=boop>
-                <th>Names</th>
-                <th>Age</th>
-                <th>What do we do?</th>
-                <th>Do we know what were doing?</th>
-            </tr>
-            <tr class=boop>
-                <td>Arzoo</td>
-                <td>18</td>
-                <td>Study and eat</td>
-                <td>Not really</td>
-            </tr>
-            <tr class=boop>
-                <td>Bhaiya</td>
-                <td>Boomer</td>
-                <td>poop</td>
-                <td><sub>mostly </sub>yes</td>
-            </tr>
-        </table>
-    </div>
-    <!--blockquote didmt work-->
-    <div>
-        <p>Here is a quote from <abbr title="World Wild Fund">WWF</abbr> website:</p>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            <q>
-                For 50 years, WWF has been protecting the future of nature.
+        <script>
+            function clear-field(){
+                document.getElementById("email").value="";
 
-                The world's leading conservation organization,
+            }
 
-                WWF works in 100 countries and is supported by
+        </script>
 
-                1.2 million members in the United States and
+        <div class="container" >
+                
+            <div class="row">
+                
+                <div class="col-md-10 col-md-offset-1 col-l-10 col-l-offset-1 col-xs-12 ;center-div"  >
+                    <div class='banner' >
+                        
+                        <img src='arzoo.jpg' class='dp' />                  
+                        <h1 class='photo-spacing'>ARZOO BAPNA</h1>                    
+                        <h3 class='photo-spacing'>Udaipur, Rajasthan</h3>
+                        <h3 class='photo-spacing'>+91 1234567890</h3>
+                        <h3 class='photo-spacing'>arzoobapna@gmail.com</h3>
+                        
+                    </div>
 
-                close to 5 million globally.
-            </q>
-        </blockquote>
+                    <br/>
+                   
 
-    </div>
-    <hr>
-    <div>
-        <p>
-                For 50 years, WWF has been protecting the future of nature.<br>
+                    <div >
+                        <center>
+                            <h2>SUMMARY</h2>
+                            <h4> | Learning CS since 2018. | Highschool graduate.| Pursuing B.Tech CS. |</h4>
+                        </center>
+                    </div>
 
-                The world's leading conservation organization,<br>
+                    <hr>
 
-                WWF works in 100 countries and is supported by<br>
+                    <div>
+                        <center>
+                            <h2>EDUCATION</h2>
+                        </center>
+                        <h4>                                
+                            <ul>
+                                <li>Techno India NJR Institute of Technology </li>
+                                <h5>Bachelor of Technology-BTech, Computer Science</h5>
+                                <h5 class='edu-years' >2020-2024</h5>
 
-                1.2 million members in the United States and<br>
+                                <li><a href=#11th>St. Anthony's Sr. Sec. School</a></li>
+                                <h5>11th and 12th class, PCM+CS</h5>
+                                <h5 class='edu-years'>2016-2018 <br/>
+                                    Activities and Societies: Music Band(violinist)
 
-                close to 5 million globally.
-        </p>
-    </div>
-    <hr>
-    <div>
-        <pre>
-                For 50 years, WWF has been protecting the future of nature.
+                                </h5>
 
-                The world's leading conservation organization,
+                                <li><a href=#10th>MDS Sr. Sec. School</a></li>
+                                <h5>9th and 10th class studied in affiliation with <u>Resonance </u></h5>
+                                <h5 class='edu-years'>2016-2018 <br/>
+                                    Activities and Socities: First Batch Student, Basketball team, Music Band (violinist)
 
-                WWF works in 100 countries and is supported by
+                                </h5>
+                            </ul>                                
+                        </h4>
+                        
+                    </div>
 
-                1.2 million members in the United States and
+                    <hr>
 
-                close to 5 million globally.
-        </pre>
-    </div>
+                    <div>
+                        <center>
+                            <h2>SKILLS, TOOLS, CERTIFICATES</h2>
+                        </center>
+                        <h4>
+                            <ul>
+                                <h3>Skills</h3>
+                                <li>Effective Communication</li>
+                                <li>Public Speaking</li>
+                                <h3>Tools</h3>
+                                <li>Python</li>
+                                <li>MySQL</li>
+                                <li>HTML+css+Bootstrap</li>
+                                <li>Javascript</li>
+                                <h3>Certificates</h3>
+                                <li><a href= #python>Programming for Everybody (Getting Started with Python)</a></li>
+                                <h5 class='edu-years'>Coursera <br/>
+                                Issued Jun 2020. No Expiration Date 
+                                </h5>
+                            </ul>
+                        </h4>
+
+                    </div>
+
+                    <hr>
+
+                    <center><h2>CERTIFICATES</h2> </center>
+                    <div class='row' >
+                        <div class='column' id='inner-div' >
+                            
+                            <img src='coursera-python.PNG' id='python' class='img'>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <center><h2>HIGHSCHOOL REPORT CARDS</h2></center> 
+                    <div class='row' id='outer-div'>                                                   
+                        <div class='column' id='inner-div'>
+                            <img src='11th report card.PNG' id='11th' class='img' />
+                        </div>
+                        <div class='column' id='inner-div'>
+                            <img src='10th report card.PNG' id='10th' class='img' />
+                            <img src='9th report card.PNG' id='9th' class='img'  />
+                        </div>     
+                           
+                    </div>
+
+                    <hr>
+<!-- 
+                    <div class='well hide'>
+                        <center>
+                            <h2>CONTACT</h2>
+                        </center>
+
+                        <form>
+                            <table border="0" style="margin: 0 auto; width:500px"> 
+                                <tr>
+                                    <td colspan='2'><h4><input type='text' placeholder='Your Name'></h4></td>
+                                    <td colspan='2'><h4><input type='email' placeholder="Your email id"></h4></td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td colspan='4'><h4><textarea  rows="4" cols="50" placeholder='Your message'></textarea></h4></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td colspan='4'><h4><input type='submit' value='Send' id='email' onclick=clear-field()></h4></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div> -->
+
+                    <div class='well'>
+                        <center>
+                            <h2>CONTACT</h2>
+                        
+                        <form >
+                            <h4><input type='text' placeholder='Your Name'></h4> 
+                            <h4><input type='email' placeholder="Your email id"></h4> <br/>
+                            <h4><textarea   placeholder='Your message'></textarea></h4>
+                            <h4><input type='submit' value='Send' id='email' onclick=clear-field()></h4>
+                            
+                        </form>
+                        </center>
+
+                    </div>
 
 
-</body>
-</html> 
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+</html>
