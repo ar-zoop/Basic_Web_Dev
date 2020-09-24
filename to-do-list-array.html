@@ -1,0 +1,140 @@
+<!-- 1.input
+2.bullets
+3.make a new to-do-list (store lists)(rdbms)
+4.check them option
+5.editing option-->
+<html>
+    <head>
+        <title>to-do list </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .banner{
+                background-color:rgb(255,245,173);
+                padding:10px
+            }
+
+            .background{
+                background-color: beige;
+                
+
+            }
+
+            body{
+                background-image:url('pexels2.jpg');
+                background-size:cover;
+                background-attachment: fixed;
+            
+            }
+
+            .box{
+                background-color: rgba(255, 255, 255, 0.5);
+                padding:10px
+                
+
+            }
+
+            .center{
+                text-align:center;
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body >
+        <script>
+            let stack=[];  
+            let delstack=[];
+            function add(){
+                let work=document.getElementById('to-do').value;
+                if (work.length<1){
+                    
+                    return False
+                }
+                else{
+                    stack.push('-'+work+ '<br>')
+                    document.getElementById('to-do').value='';
+                    document.getElementById('list').innerHTML=stack;
+                }
+            };
+
+            function remove(){                  
+                let i=document.getElementById('number').value;   
+                if (i<1){
+                    alert ('Enter a valid number');
+                    document.getElementById('number').value='';
+                    return false;
+                }
+                //else if(!(i.isNaN())){
+                //     alert ('Enter a valid number')
+                //     return false
+                // }
+                else{
+                //     let s=''
+                    let num=i-1;                                    
+                    delstack.push(stack.splice(num,1));  
+                    
+                    if (num>0){
+                        // s=delstack.pop();
+                        // s.slice(1,(s.length - 1));
+                        // delstack.push(s)
+                        // delstack.splice(1, 1)
+                    }
+                    document.getElementById('delist').innerHTML=delstack;
+                    document.getElementById('list').innerHTML=stack;
+                    document.getElementById('number').value='';
+                }
+
+            };
+
+        </script>
+       
+       <div class='container'>
+        <div class='row'>
+            <div class="col-md-8 col-md-offset-2 col-l-6 col-l-offset-3 col-xs-12 ; ">
+            
+                <div > 
+                    <center>
+                        <h1>To-Do List</h1>
+                    </center>
+                </div>
+            
+                <div class='well'>
+                
+                    <div class='col-md-6  center'>
+                
+                            <h2><u>TO-DO</u></h2>
+                            <input type='text' id='to-do' placeholder='Add task'> <br/> <br/>
+                            <input type="button" id='submit' value='Enter' onclick="add()">
+                            <h4 id='list' style='text-align :left'></h4>
+                            
+ 
+                    </div>
+
+                    
+                    <div class='col-md-6 center'>
+                        
+                            <h2><u>DONE</u></h2>
+                            <input type='text' id='number' placeholder='Task at what position?' /> <br/> <br/>
+                            <input type='button' id='done' value='Task Completed' onclick='remove()' />
+                            <s><p id='delist'></p></s>
+                        
+                        
+                    </div>
+                </div>
+            
+            
+
+            </div>
+                
+            
+        </div>
+    </div>
+                
+    </body>
+
+</html>
