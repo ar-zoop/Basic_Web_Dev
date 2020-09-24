@@ -1,0 +1,122 @@
+
+ 
+.logo{
+     /* position: absolute; */
+    height: 250px;
+    width: 250px;
+    /* top: 126px;
+    left: 84px; 
+   */
+    margin:auto 0px;
+}
+.header{
+    margin:auto 0px;
+    font-size: 55px;
+    color: white;
+    /* position: relative; */
+    top: 2px;
+    
+}
+
+.chip{
+    /* top: 340px; */
+    /* position: relative; */
+    margin:auto 0px;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    /* left: 79px; */
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.dip{
+    /* top: 376px; */
+    /* position: relative; */
+    margin:auto 0px;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    /* left: 79px; */
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.merch{ 
+    /* top: 413px; */
+    /* position: relative; */
+    margin:auto 0px;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    /* left: 79px; */
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+ 
+    .logo{
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 55px;
+        left: 530px;
+    }
+
+    
+.header{
+
+  font-size: 120px;
+    color: white;
+    position: relative;
+    top: -11px;
+}
+.chip{
+    top: 273px;
+    position: relative;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    left: 578px;
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.dip{
+    top: 367px;
+    position: relative;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    left: 329px;
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px; 
+}
+.merch{ 
+    top: 459px;
+    position: relative;
+    height: 61px;
+    width: 246px;
+    font-size: 36px;
+    left: 78px;
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+}
