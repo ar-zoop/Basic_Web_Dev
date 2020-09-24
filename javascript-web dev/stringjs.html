@@ -1,0 +1,15 @@
+<html>
+    <body >
+        <script>
+        // let str = document.getElementById("empname").value//"the baby kicks the ball"; 
+        // let domain = str.substring(str.indexOf('@') + 1);
+        // document.getElementById("ulable").innerHTML=domain;
+       
+        let email = document.getElementById("empname").value; 
+		let localPart = email.slice(0,email.indexOf('@'));
+
+		document.getElementById("ulable").innerHTML=localPart;
+        
+        </script>
+        </body>
+</html>

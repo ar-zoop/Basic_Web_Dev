@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+let stack=[];
+	function stackPush(){
+		var num=document.getElementById("input").value;
+		if (num.length < 1)
+		{
+			alert("DEFAULT");
+			return false;
+		}
+		stack.push(num);
+		document.getElementById("demo").innerHTML=stack;
+		document.getElementById("input").value="";
+		}
+		function stackPop(){
+			stack.pop();
+			document.getElementById("demo").innerHTML=stack;
+		}
+</script>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Stack Implementation</h2></td>
+    </tr>
+ 
+    <tr>
+	    <td><input type="text" id="input" /></td><td><p id="demo"></p></td><br/>
+    </tr>
+	<tr>
+        <td><input type="button" onclick="stackPush()" value="Push" /></td><td><input type="button" onclick="stackPop()" value="Pop" /></td>
+    </tr>
+   
+</table>
+</body>
+</html>
